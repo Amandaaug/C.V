@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Estamos te vigiando</title>
+<style>
+  body {
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 4em;
+    margin-top: 20vh;
+    text-shadow: 0 0 20px red;
+  }
+  p {
+    font-size: 2em;
+    margin-top: 2vh;
+    text-shadow: 0 0 15px darkred;
+  }
+  .eyes {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/6Yq3vJd.png') no-repeat center center;
+    background-size: 200px;
+    opacity: 0.2;
+    animation: blink 1s infinite alternate;
+    pointer-events: none;
+  }
+  @keyframes blink {
+    0% { opacity: 0.2; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0.2; }
+  }
+</style>
+</head>
+<body>
+  <div class="eyes"></div>
+  <h1>ESTAMOS TE VIGIANDO</h1>
+  <p>PEGAMOS TODOS OS SEUS DADOS!</p>
+
+  <audio autoplay>
+    <source src="https://www.soundjay.com/horror/sounds/scary-scream-01.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Múltiplos alertas para aumentar suspense
+    setTimeout(() => alert("VOCÊ FOI PEGAAAAA!"), 2000);
+    setTimeout(() => alert("NÃO VAI ESCAPAR!"), 4000);
+  </script>
+</body>
+</html>
